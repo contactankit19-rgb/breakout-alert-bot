@@ -4,7 +4,9 @@ from telegram import Bot
 import os
 
 # === CONFIG ===
-TELEGRAM_TOKEN = '8446122011:AAF01V-OwF0OLnR3rgVv8jcJiVrHz_IfQV8'
+import os
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+
 TIMEFRAME = '4h'
 LIMIT = 100
 VOLUME_THRESHOLD = 30000000  # $30M
